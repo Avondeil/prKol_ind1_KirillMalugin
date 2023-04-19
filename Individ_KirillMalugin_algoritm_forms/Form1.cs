@@ -21,26 +21,37 @@ namespace Individ_KirillMalugin_algoritm_forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            queue.Clear();
-            listBox1.Items.Clear();
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.InitialDirectory = "C:\\Users\\305-3\\Desktop\\Kirill Malugin\\Individ_KirillMalugin_algoritm_forms";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            try
             {
-                string namefile = openFileDialog1.FileName;
+                queue.Clear();
                 listBox1.Items.Clear();
-                string[] st = File.ReadAllLines(namefile);
-                for (int i = 0; i < st.Length; i++)
+                OpenFileDialog openFileDialog1 = new OpenFileDialog();
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    if (int.Parse(st[i])<0)
-                   queue.Enqueue(int.Parse(st[i]));
-                    else listBox1.Items.Add(st[i]);
+                    string namefile = openFileDialog1.FileName;
+                    int count = File.ReadAllText(namefile).Length;
+                    if (count>0)
+                    {
+                       
+                        listBox1.Items.Clear();
+                        string[] st = File.ReadAllLines(namefile);
+                        for (int i = 0; i < st.Length; i++)
+                        {
+                            if (int.Parse(st[i]) < 0)
+                                queue.Enqueue(int.Parse(st[i]));
+                            else listBox1.Items.Add(st[i]);
+                        }
+                        foreach (int lines in queue)
+                        {
+                            listBox1.Items.Add(lines);
+                        }
+                    }
+                    else MessageBox.Show("Найден пустой файл", "Сообщение", MessageBoxButtons.OK);
+
                 }
-                foreach (int lines in queue)
-                {
-                    listBox1.Items.Add(lines);
-                }
+                else MessageBox.Show("Не был выбран файл", "Сообщение", MessageBoxButtons.OK);
             }
+            catch { MessageBox.Show("Выбран некорректный файл", "Сообщение", MessageBoxButtons.OK);}
             
         }
     }

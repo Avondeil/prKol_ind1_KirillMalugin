@@ -5,3 +5,10 @@ C:\Users\305-3\Desktop\Kirill Malugin\Prakt16algoritm\obj\Debug\Prakt16algoritm.
 C:\Users\305-3\Desktop\Kirill Malugin\Prakt16algoritm\obj\Debug\Prakt16algoritm.csproj.CoreCompileInputs.cache
 C:\Users\305-3\Desktop\Kirill Malugin\Prakt16algoritm\obj\Debug\Prakt16algoritm.exe
 C:\Users\305-3\Desktop\Kirill Malugin\Prakt16algoritm\obj\Debug\Prakt16algoritm.pdb
+C:\Users\305-3\Desktop\Kirill Malugin\Individ_KirillMalugin_algoritm\bin\Debug\Prakt16algoritm.exe.config
+C:\Users\305-3\Desktop\Kirill Malugin\Individ_KirillMalugin_algoritm\bin\Debug\Prakt16algoritm.exe
+C:\Users\305-3\Desktop\Kirill Malugin\Individ_KirillMalugin_algoritm\bin\Debug\Prakt16algoritm.pdb
+C:\Users\305-3\Desktop\Kirill Malugin\Individ_KirillMalugin_algoritm\obj\Debug\Prakt16algoritm.csproj.AssemblyReference.cache
+C:\Users\305-3\Desktop\Kirill Malugin\Individ_KirillMalugin_algoritm\obj\Debug\Prakt16algoritm.csproj.CoreCompileInputs.cache
+C:\Users\305-3\Desktop\Kirill Malugin\Individ_KirillMalugin_algoritm\obj\Debug\Prakt16algoritm.exe
+C:\Users\305-3\Desktop\Kirill Malugin\Individ_KirillMalugin_algoritm\obj\Debug\Prakt16algoritm.pdb

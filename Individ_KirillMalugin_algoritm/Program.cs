@@ -11,8 +11,8 @@ namespace Prakt16algoritm
         static void Main(string[] args)
         {
             bool scan = true;
-            Console.Write("Введите строку s1: "); string s1 = Console.ReadLine();
-            Console.Write("Введите строку s2: "); string s2 = Console.ReadLine();
+            Console.Write("Введите строку s1: "); string s1 = Console.ReadLine().Replace(" ", "");
+            Console.Write("Введите строку s2: "); string s2 = Console.ReadLine().Replace(" ", "");
             Stack <char> stack = new Stack<char>();
             foreach (char c in s1)
             {
